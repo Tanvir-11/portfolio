@@ -1,0 +1,441 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.nav-logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 40%;
+}
+.nav-heading h1{ 
+    color: white;
+    font-size: 40px;
+
+}
+.dotted-hr{
+    border: 5px dotted white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 60px;
+    
+}
+.nav-link{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.nav-link a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    color: white;
+    background-color:#0d5055 ;
+    margin: 10px;
+    border-radius: 5px;
+}
+.navbar{
+    background-color: #046168;
+    text-align: center;
+   
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* FOR MOBILE */
+[class*="col-"]{
+    width: 100%;
+}
+.navbar::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+/*++++++++++++
+ Navmanu End
+ ++++++++++++*/
+
+ /* profile start */
+ .profile{
+     text-align: center;
+     position: relative;
+     margin-bottom: 150px;
+     
+ }
+ .profile img{
+     width: 100px;
+     height: 100px;
+ }
+ .top-book-icon{
+     padding: 10px;
+     border-radius: 50%;
+     position: absolute;
+     right: 20px;
+     transition: transform 2s;
+     
+ }
+ .top-book-icon:hover{
+    transform:rotate(360deg) ;
+ }
+ 
+ .profile-desc h1{
+    font-size: 2.5rem;
+     padding: 150px 10px 30px 10px ;
+ }
+ .profile-desc p{
+     font-size: 22px;
+     color: gray;
+     text-align: justify;
+     padding: 0px 70px;
+ }
+ .bottom-book-icon{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    transition: transform 2s;
+}
+ .bottom-book-icon:hover{
+    transform:rotate(360deg) ;
+ }
+.profile::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+/* Profile end */
+
+/* about start */
+.about{
+    
+    padding: 1% 7%;
+    color: white;
+    background-color: #39a4ac;
+    text-align: center;
+}
+.about h2{
+    margin-top: 20px;
+    font-size: 2rem;
+}
+ 
+.about-img img{
+    margin-top: 50px ;
+    height: 150px;
+    width: 150px;
+    border:5px solid black;
+    border-radius: 50%;
+}
+.about p{
+    font-size: 1.2rem;
+   
+}
+.about-hr{
+   margin: 15px 0;
+}
+.about a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.about .cv-btn{
+    box-sizing: border-box;
+    border: none;
+    color: white;
+    background-color: #052d2f;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 7px;
+}
+.about .cv-btn:hover{
+    padding: 8px;
+    border-radius: 7px;
+    border: 2px solid #052d2f ;
+    background-color: transparent;
+}
+
+.about::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+/* start card */
+
+
+.card{
+    padding: 20px 0;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: grey;
+    margin: 10px ;
+}
+.card:hover{
+    box-shadow: 1px 3px 5px 3px  black;
+ }
+.card-icon{
+    
+    text-align: center;
+}
+.card-icon img{
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.card-tittle{
+    margin: 20px 0;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: rgb(83, 80, 80);
+}
+
+ol{
+    list-style-type:1;
+}
+li{
+    line-height: 25px;
+}
+.p-hr{
+    margin: 20px 10px 20px 0 ;
+}
+.card-desc a{
+    padding-top: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* SKILLS SECTION START */
+.skills-container{
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.skills-container li{
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 30px 0;
+    position: relative;
+  
+}
+.skills-container li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    background-color: #0f8000;
+    height: 10px;
+    width: 100%;
+    border-radius: 1000px;
+    left: 0;
+
+}
+
+.skills-container li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    background-color: #42c730;
+    height: 10px;
+    width: 0;
+    border-radius: 1000px;
+    left: 0;
+
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    
+
+}
+.skills-container li.css::after{
+    animation-name: hml;
+}
+@keyframes hml {
+    to{
+        width: 80%;
+    }
+}
+
+.skills-container li.htm::after{
+    animation-name: html;
+}
+@keyframes html {
+    to{
+        width: 90%;
+    }
+}
+.skills-container li.bst::after{
+    animation-name: bst;
+}
+@keyframes bst {
+    to{
+        width: 70%;
+    }
+}
+.skills-container li.js::after{
+    animation-name: js;
+}
+@keyframes js {
+    to{
+        width: 75%;
+    }
+}
+.skills-container li.jq::after{
+    animation-name: jq;
+}
+@keyframes jq {
+    to{
+        width: 85%;
+    }
+}
+.skills-container li.njs::after{
+    animation-name: njs;
+}
+@keyframes njs {
+    to{
+        width: 72%;
+    }
+}
+.skills-container li.ejs::after{
+    animation-name: htmla;
+}
+@keyframes htmla {
+    to{
+        width: 78%;
+    }
+}
+.skills-container li.git::after{
+    animation-name: htgml;
+}
+@keyframes htgml {
+    to{
+        width: 82%;
+    }
+}
+.skills-container li.rjs::after{
+    animation-name: htsml;
+}
+@keyframes htsml {
+    to{
+        width: 88%;
+    }
+}
+.professional-experince::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+/* SKILLS SECTION END */
+
+
+/* ACHEVMENT-CONTENT START */
+.achievment-contact{
+    padding-top: 40px;
+    background-color: #39a4ac;
+    text-align: center;
+    color: white;
+}
+.achievment{
+  
+   padding: 1% 5%;
+   
+}
+.achievment-contact h2{
+    text-transform: uppercase;
+}
+.achievment-contact p{
+    font-size: 1.2rem;
+    
+   
+}
+.achievment-text{
+    margin-top: 25px;
+}
+form{
+    margin: 30px;
+}
+.contact input,textarea{
+ 
+    width: 100%;
+    border: none;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    font-size: 1rem;
+    resize: none;
+    box-shadow:1px 2px 3px 1px #052d2f86;
+    
+}
+.contact input,textarea:focus{
+   outline: none;
+}
+
+.contact button{
+    border: none;
+    background-color: #052d2f;
+    padding: 10px 15px;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.links{
+    text-align: center;
+    
+}
+.media-buttons .btn{
+    border: none;
+    margin: 10px;
+    padding: 7px 10px;
+    font-size: 25px;
+    border-radius: 4px;
+    
+}
+.media-buttons .btn:hover{
+    background-color: rgb(190, 187, 187);
+}
+.achievment-contact::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+/* ACHEVMENT-CONTENT END */
+
+.footer{
+    height: 100px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    
+   
+}
+.footer-link{
+    margin-top: 10px;
+}
+.footer a{
+   
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+    color: rgb(184, 182, 182);
+}
+.footer a:hover{
+    color: white;
+}
+
+
+.footer::after{
+    clear: both;
+    content: '';
+    display: table;
+}

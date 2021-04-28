@@ -1,0 +1,102 @@
+ *{
+     box-sizing: border-box;
+ }
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-8{width: 66.66%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+.nav-logo{
+    text-align: left;
+    padding: 0px 40px;
+    margin: 10px 0px;
+}
+.nav-heading h1{ 
+    font-size: 3rem;
+    margin-top: 10px;
+    text-align: right;
+}
+.nav-link{
+   
+    flex-direction: row;
+   justify-content: flex-end;
+}
+.nav-link a{
+    background-color: transparent;
+    padding: 5px 20px;
+    margin: 20px 0px;
+
+}
+.nav-link a:hover{
+    background-color: #148d95;
+}
+
+/* profile start */
+.profile{
+    margin-bottom: 200px;
+}
+.profile img{
+    height: 150px;
+    width: 150px;
+}
+.profile-desc h1{
+    font-size: 3rem;
+}
+.profile-desc p{
+    padding: 0px 30%;
+}
+.top-book-icon{
+    top: 20px;
+    right: 50px;
+}
+.bottom-book-icon{
+    left: 50px;
+
+}
+.profile::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+/* Profile end */
+
+/* About start */
+.about-img img{
+    left: 50px;
+    margin-top: 50px ;
+    height: 250px;
+    width: 250px;
+    border:5px solid black;
+    border-radius: 50%;
+}
+.about-desc p{
+    text-align: left;
+}
+.about .cv-btn{
+    margin: 20px 0 0 0;
+}
+
+.media-buttons {
+   
+    margin-top: 70px;
+   
+}
+.media-buttons .btn{
+    
+    margin-top: 30px;
+    display: block;
+    margin:20px auto;
+}
+
+.footer-text{
+    margin-top: 30px;
+}
+.footer-link{
+    margin-top: 25px;
+}
